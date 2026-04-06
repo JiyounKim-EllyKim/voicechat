@@ -35,7 +35,7 @@ def main():
         st.session_state['check_reset'] = False     # 초기화 용 버튼.
 
     with st.sidebar:
-        model = st.radio(label='GPT 모델', options=['gpt-4.1', 'gpt-5-nano', 'gpt-5.2'], index=0)     # strategy pattern. 혹시 원래 사용하는 모델이 안 되는 경우, 모델만 변경해서 바로 사용할 수 있도록 하는게 전략 패턴. 모델을 바꿔도 돌아가도록.
+        model = st.radio(label='GPT 모델', options=['gpt-4.1', 'gpt-5-nano', 'gpt-5.2'], index=2)     # strategy pattern. 혹시 원래 사용하는 모델이 안 되는 경우, 모델만 변경해서 바로 사용할 수 있도록 하는게 전략 패턴. 모델을 바꿔도 돌아가도록.
         print(f'model={model}')
 
         if st.button(label='초기화'):
